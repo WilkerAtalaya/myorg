@@ -1,4 +1,4 @@
-# YOINTI_HTML
-Pagina web informativa para la empresa de servicios digitales YOINTI
+# MY ORG DIGITAL
+Page service
 
-npm install swiper // Para el slider
+npm install swiper
