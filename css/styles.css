@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans',sans-serif;
+}
+
+body{
+    background-color: #EDEDED;
+}
+
+
+
+/*---------------------------SLIDE--------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+.container-slider{
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+    margin: auto;
+    background-color: #FFB602;
+}
+
+.container-slider ul {
+    display: flex;
+    animation: cambio 16s infinite alternate ease-in-out;
+    width: 400%;
+    padding: 0;
+}
+
+.container-slider li{
+   width: 100%;
+   list-style: none;
+}
+
+.container-slider h1{
+    position: absolute;
+    color: red;
+    top: 50%;
+    left: 10%;
+}
+
+.container-slider img{
+    width: 100%;
+    height: 65%;
+    padding-top: 85px;
+}
+/*.slider-section{
+    position: relative;
+    list-style:none;
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+}
+.container-slider input[type="radio"]{
+    /*position: relative;
+    z-index: 50;
+    margin: 10px;
+    align-items: flex-end;
+}*/
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    95%{margin-left: -300%;}
+}
+
+
+.container-slider .menu-slider {
+   
+    display: inline-block;
+
+}
+.container-slider .menu-slider li{
+    
+    display:inline-block;
+    text-align: center;
+    
+}
+.container-slider .menu-slider li a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: gray;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    padding-top: 20px;
+    
+}
+
+@media (max-width: 768px){
+    .container-slider{
+        width: 100%;
+        height: 279px;
+        overflow: hidden;
+        background-color: #FFB602;
+    }
+    .container-slider img{
+        padding-top: 65px;
+    }
+}
+
+

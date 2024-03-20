@@ -1,0 +1,769 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0 shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link rel="stylesheet"  href="../css/dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Icons-fontawesome -->
+    <script src="https://kit.fontawesome.com/7762120437.js" crossorigin="anonymous"></script>
+
+    <script defer src="index.js"></script>
+    
+    <title>Dashboard</title>
+</head>
+
+<body>
+    
+    <header class="header">
+        <!-- NAVBAR ADMIN-->
+        <div class="caja cajanav">
+    
+            <!-- Topbar -->
+            <nav class="navbar navbar-expand-lg navbar-light topbar static-top shadow navadd">
+                <!-- Logo Navbar-->
+                <div class="logo-div1">
+                    <div class="logo-div2">
+                        <img class="logonegro" src="../../img/logoblack.png" alt="">
+                    </div>
+                </div>
+    
+                <div class="titulocentral">
+                    <h5><b>Plataforma Mi Organización Digital</b></h5>
+                </div>
+                
+                <!-- Botón de navegación para dispositivos pequeños -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Contenido del menú -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="nav-list">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../index2.html"><i class="fas fa-home"></i> Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./html/contacto.html"><i class="fas fa-pencil-ruler"></i> Edición Web</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa-solid fa-circle-user"></i>
+                                <span class="mr-2 d-none d-lg-inline text-black">Antonio Fernandez</span>
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-1 text-gray-400"></i>
+                                    Cerrar Sesión
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="title-body">
+        <div class="title-logo">
+            <img class="logonegro" src="../../img/logoblack.png" alt="">
+        </div>
+        <div class="title-text">
+            <h5 class="text-size"><b>Nombre Organización</b></h5>
+            <h8 class="text-size2">Configuración de la Web</h8>
+        </div> 
+    </div>
+    
+    <div class="body-dashboard">
+
+        <div class="col left-side" >
+            <div class="d-flex justify-content-center modify">  
+                <div class="tablero" >
+                    <table class="table">
+                        <thead class="thead">
+                            <tr>
+                                <th colspan="3"><i class="fas fa-users icon"></i>Miembros de Equipos</th>
+                                <th><a id="agregarMiembroButton" href="#ventana1" class="btn-table plus" data-toggle="modal" ><i class="fas fa-user-plus"></i></a></th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
+                        <tr class="tbody">
+                            <td><img src="../img/prueba.jpg" alt="Usuario 1" class="img-table"></td>
+                            <td>ANA PEREZ</td>
+                            <th>Jefe</th>
+                            <td>
+                            <div class="herramientas">
+                                <button type="button" class="btn btn-primary btnh"><i class="fa-solid fa-pen-to-square hrr" width="10px"></i></button>
+                                <button type="button" class="btn btn-primary btnh-eliminar"><i class="fa-solid fa-trash-can hrr" width="10px"></i></button>
+                            </div>
+                            </td>
+                        </tr>
+                        <tr class="tbody">
+                            <td><img src="../img/prueba.jpg" alt="Usuario 1" class="img-table"></td>
+                            <td>PEDRO PEREZ</td>
+                            <th>Editor</th>
+                            <td>
+                                <div class="herramientas">
+                                    <button type="button" class="btn btn-primary btnh"><i class="fa-solid fa-pen-to-square hrr" width="10px"></i></button>
+                                    <button type="button" class="btn btn-primary btnh-eliminar"><i class="fa-solid fa-trash-can hrr" width="10px"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tbody">
+                            <td><img src="../img/prueba.jpg" alt="Usuario 1" class="img-table"></td>
+                            <td>LUIS PEREZ</td>
+                            <th>Editor</th>
+                            <td>
+                                <div class="herramientas">
+                                    <button type="button" class="btn btn-primary btnh"><i class="fa-solid fa-pen-to-square hrr" width="10px"></i></button>
+                                    <button type="button" class="btn btn-primary btnh-eliminar"><i class="fa-solid fa-trash-can hrr" width="10px"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>   
+                    <div class="modal fade" id="ventana1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title fs-5" id="exampleModalLabel"><b>Editar miembro del Equipo</b></h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">Nombre:</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="mb-3 type">
+                                            <label for="tipo-miembro" class="col-form-label">Tipo de Miembro:</label>
+                                            <div class="dropdown-btn btn-group typeinput">
+                                                <a id="tipoMiembroButton" href="#" class="btn btn-secondary dropdown-toggle ipt" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Jefe
+                                                </a>
+                                                <div class="dropdown-menu typeinput" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Jefe</a>
+                                                    <a class="dropdown-item" href="#">Editor</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="foto" class="col-form-label foto-input">Subir Foto:</label>
+                                            <input type="file" class="form-control" id="foto" accept=".jpg" title="Subir">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="email" class="col-form-label">Email:</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary botones1">Guardar</button>
+                                    <button type="button" class="btn btn-secondary botones2" data-bs-dismiss="modal">Salir</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade " id="ventana2" tabindex="-1" role="dialog" aria-labelledby="miModalLabel" aria-hidden="true">
+                        <div class=" modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" role="document">
+                          <div class="modal-content cambiaplan">
+                            <div class="modal-header planheader">
+                                <h5 class="modal-title fs-5" id="exampleModalLabel"><b>Cambio de plan</b></h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <!-- División superior dividida en 3 columnas -->
+                            <div class="modal-body planbody">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="firstmessage">
+                                            <div class="first-container">
+                                                <div class="first-mensaje">   
+                                                        <p><b>Conoce los planes que te podemos ofrecer para tu organización:</b></p> 
+                                                </div>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                              <div class="row">
+                                <div class="col-md-4">
+                                    <a href="../planes/basic.html" class="cuadro">
+                                        <div class="up-cuadro">
+                                            <h1><b>Básico</b></h1>
+                                        </div>
+                                        <p><strong>Formato Landing informativo</strong></p>
+                                        <ol class="ol-box">
+                                            <li class="li-box">Subdominio personalizado</li>
+                                            <li class="li-box">Seguridad Web</li>
+                                            <li class="li-box">Atención al Cliente</li>
+                                        </ol>
+                                        <div class="down-cuadro">
+                                            <ol class="ol-box">
+                                                <li class="li-box">Espacio de Almacenamiento de 2GB</li>
+                                                <li class="li-box">Número de Usuarios: 1</li>
+                                            </ol>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="../planes/medium.html" class="cuadro">
+                                        <div class="up-cuadro">
+                                            <h1><b>Medio</b></h1>
+                                        </div>
+                                        <p><strong>Todo lo del plan Básico más los siguientes Módulos:</strong></p>
+                                        <ol class="ol-box">
+                                            <li class="li-box">Subdominio personalizado</li>
+                                            <li class="li-box">Seguridad Web</li>
+                                            <li class="li-box">Atención al Cliente</li>
+                                        </ol>
+                                        <div class="down-cuadro card2">
+                                            <ol class="ol-box">
+                                                <li class="li-box">Espacio de Almacenamiento de 2GB</li>
+                                                <li class="li-box">Número de Usuarios: 1</li>
+                                            </ol>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="../planes/advanced.html" class="cuadro">
+                                        <div class="up-cuadro">
+                                            <h1><b>Avanzado</b></h1>
+                                        </div>
+                                        <p><strong>Todo lo del plan Medio más los siguientes Módulos:</strong></p>
+                                        <ol class="ol-box">
+                                            <li class="li-box">Subdominio personalizado</li>
+                                            <li class="li-box">Seguridad Web</li>
+                                            <li class="li-box">Atención al Cliente</li>
+                                        </ol>
+                                        <div class="down-cuadro card3">
+                                            <ol class="ol-box">
+                                                <li class="li-box">Espacio de Almacenamiento de 2GB</li>
+                                                <li class="li-box">Número de Usuarios: 1</li>
+                                            </ol>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                              </div>
+                      
+                              <!-- Contenido de la división inferior -->
+                              <div class="row">
+                                <div class="col-md-12">
+                                    <div class="message2">
+                                        <div class="message-container2">
+                                            <div class="message-cont2">  
+                                                <div class="mensaje2">   
+                                                    <p>Ahora comunicate con nosotros y conoce los precios de los planes.</p> 
+                                                </div>  
+                                                <div class="message-icon2">  
+                                                    <div class="circle-icon2"> 
+                                                        <a href="tu_enlace_aqui" class="enlace-whatsapp2">   
+                                                            <i class="fab fa-whatsapp icono-whatsapp2"></i>  
+                                                        </a>    
+                                                    </div>    
+                                                </div>  
+                                            </div>   
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>                 
+                </div>   
+            </div>
+
+            <div class="col text-center d-flex justify-content-center modify2" >
+                <div class="d-flex flex-column align-items-center general-container">
+                    <div class="col plan-medio">
+                        <div class="plan-title">
+                            <h3 class="plan-size"><i class="fas fa-star icon"></i>Plan Medio</h3>
+                        </div>
+                        <div class="plan-contenido">
+                            <p>Accede a funciones limitadas. ¿Necesita más?</p>
+                            <div class="plan-btn">
+                                <a href="#ventana2" class="btn-plan" data-toggle="modal">Subir Plan</a>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col plan-image">
+                        <div class="plan-title-img">
+                            <h3 class="plan-size"><i class="fas fa-star icon"></i>Sube tu Logo</h3>
+                        </div>
+                        <div class="plan-img-container">
+                            <div class="plan-left">     
+                                <div class="plan-contenido-img">
+                                    <p>Selecciona el archivo de tu logo en formato <span style="color: red;">JPG o PNG</span>:</p>
+                                    <div class="plan-btn">
+                                        <a href="#" class="btn-plan" id="subir-archivo">Subir Archivo</a>                             
+                                        <input type="file" id="archivo-input" accept="image/jpeg, image/png" style="display: none;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="plan-right">
+                                <div class="plan-img">
+                                    <img src="../img/imgplan.png" alt="planimg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col redes-sociales">                       
+                        <div class="redes-title">
+                            <h3 class="plan-size"><i class="fas fa-star icon"></i>Edita tus redes sociales</h3>
+                        </div>
+                        <div class="redes-container">
+                            <div class="col redes-text">
+                                <p class="parrafo">Escribe los enlaces de tus Redes Sociales</p>
+                            </div>
+                            <div class="redes">
+                                <div class="red-social">
+                                    <div class="logo-circulo">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </div>
+                                    <input type="text" placeholder="Escribe el URL de Facebook">
+                                </div>
+                                <div class="red-social">
+                                    <div class="logo-circulo">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </div>
+                                    <input type="text" placeholder="Escribe el URL de WhatsApp">
+                                </div>
+                                <div class="red-social">
+                                    <div class="logo-circulo">
+                                        <i class="fab fa-instagram"></i>
+                                    </div>
+                                    <input type="text" placeholder="Escribe el URL de Instagram">
+                                </div>
+                                <div class="red-social">
+                                    <div class="logo-circulo">
+                                        <i class="fab fa-tiktok"></i>
+                                    </div>
+                                    <input type="text" placeholder="Escribe el URL de TikTok">
+                                </div>
+                                <div class="red-social">
+                                    <div class="logo-circulo">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </div>
+                                    <input type="text" placeholder="Escribe el URL de LinkedIn">
+                                </div>
+                                <div class="redes-btn">
+                                    <div class="plan-btn">
+                                        <a href="#"  class="btn-plan">Guardar Cambios</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col subdominio">                       
+                        <div class="subdominio-title">
+                            <h3 class="plan-size"><i class="fas fa-star icon"></i>Edita tus redes sociales</h3>
+                        </div>
+                        <div class="subdominio-container">
+                            <div class="col subdominio-text">
+                                <p class="parrafo">Escribe el subdominio para tu organización:</p>
+                            </div>
+                            <div class="subdominios">
+                                <div class="red-social">
+                                    <input type="text" placeholder="https://miorgdigital.com/">
+                                </div>
+                                <div class="redes-btn">
+                                    <div class="plan-btn">
+                                        <a href="#"  class="btn-plan">Guardar Cambios</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>           
+                </div>
+            </div>
+            
+        </div>
+
+
+
+        <div class="right-side">
+            <div class="estadisticas">
+                <div class="estadistica-title">
+                    <h3 class="estadistica-size"><i class="fas fa-chart-bar icon"></i>Estadísticas</h3>
+                </div>
+                <div class="container">
+                    <div class="left-estadistica">
+                        <div class="dropdown stadistics-row">
+                            <h4>Número de visitantes</h4>
+                            <p>Selecciona:</p>
+                            <a id="dropdownButton1" class="btn btn-secondary dropdown-toggle dropdown-btn" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Días
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <a class="dropdown-item" href="#">Días</a>
+                                <a class="dropdown-item" href="#">Semanas</a>
+                                <a class="dropdown-item" href="#">Meses</a>
+                                <a class="dropdown-item" href="#">Años</a>
+                            </div>
+                        </div>
+                        
+                        <div class="dropdown stadistics-row">
+                            <h4>Número de interacciones</h4>
+                            <p>Selecciona:</p>
+                            <a id="dropdownButton2" class="btn btn-secondary dropdown-toggle dropdown-btn" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Días
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                <a class="dropdown-item" href="#">Días</a>
+                                <a class="dropdown-item" href="#">Semanas</a>
+                                <a class="dropdown-item" href="#">Meses</a>
+                                <a class="dropdown-item" href="#">Años</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-estadistica">
+                        <div class="graphics">
+                            <img src="../img/estadisticas.jpg" alt="graphic" class="img-graphic">
+                        </div>
+                        <div class="graphics">
+                            <img src="../img/estadisticas.jpg" alt="graphic" class="img-graphic">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="colores">
+                <div class="colores-title">
+                    <h3 class="plan-size"><i class="fas fa-star icon"></i>Elije los colores</h3>
+                </div>
+                <div class="colores-container">
+                    <div class="col colores-text">
+                        <p class="parrafo">De acuerdo a tu diseño de marca, selecciona los colores que identifican a tu organización.</p>
+                    </div>
+                    <div class="paleta-container">
+                        <div class="paleta-text">
+                            <div class="input-color">
+                                <p>Elige el color principal:</p>
+                                <input type="text" id="color-code-primary" placeholder="Código Hexadecimal" >
+                                <p class="texto-cursiva">Escribe el Código RGB</p>
+                            </div>
+                            <div class="input-color">
+                                <p>Elige el color secundario:</p>
+                                <input type="text" id="color-code-secondary" placeholder="Código Hexadecimal" >
+                                <p class="texto-cursiva">Escribe el Código RGB</p>
+                            </div>
+                            <div class="input-button">
+                                <button type="button" class="btn btn-primary botones1">Guardar</button>
+                                <button type="button" class="btn btn-secondary botones2">Limpiar</button>
+                            </div>
+                        </div>
+                        <div class="paleta-color">
+                            <div class="color-picker color-palette-primary">
+                                <p>Colores más oscuros</p>
+                                <div class="color-palette">
+                                    <!-- Paleta de colores oscuros -->
+                                    <div class="color" style="background-color: #660000;" data-color="#660000"></div>
+                                    <div class="color" style="background-color: #006600;" data-color="#006600"></div>
+                                    <div class="color" style="background-color: #000066;" data-color="#000066"></div>
+                                    <div class="color" style="background-color: #666600;" data-color="#666600"></div>
+                                    <div class="color" style="background-color: #660066;" data-color="#660066"></div>
+                                    <div class="color" style="background-color: #006666;" data-color="#006666"></div>
+                                    <div class="color" style="background-color: #333333;" data-color="#333333"></div>
+                                    <div class="color" style="background-color: #111111;" data-color="#111111"></div>
+                                </div>
+                            </div>
+                            <div class="color-picker color-palette-primary">
+                                <p>Colores vibrantes</p>
+                                <div class="color-palette">
+                                                    <div class="color" style="background-color: #FF0000;" data-color="#FF0000"></div>
+                                                    <div class="color" style="background-color: #00FF00;" data-color="#00FF00"></div>
+                                                    <div class="color" style="background-color: #0000FF;" data-color="#0000FF"></div>
+                                                    <div class="color" style="background-color: #FFFF00;" data-color="#FFFF00"></div>
+                                                    <div class="color" style="background-color: #FF00FF;" data-color="#FF00FF"></div>
+                                                    <div class="color" style="background-color: #00FFFF;" data-color="#00FFFF"></div>
+                                                    <div class="color" style="background-color: #FF4500;" data-color="#FF4500"></div>
+                                                    <div class="color" style="background-color: #8A2BE2;" data-color="#8A2BE2"></div>
+                                </div>
+                            </div>
+                            <div class="color-picker color-palette-secondary">
+                                <p>Colores Pastel</p>
+                                <div class="color-palette">
+                                    <!-- Paleta de colores pastel -->
+                                    <div class="color" style="background-color: #FFCCCC;" data-color="#FFCCCC"></div>
+                                    <div class="color" style="background-color: #CCFFCC;" data-color="#CCFFCC"></div>
+                                    <div class="color" style="background-color: #CCCCFF;" data-color="#CCCCFF"></div>
+                                    <div class="color" style="background-color: #FFFFCC;" data-color="#FFFFCC"></div>
+                                    <div class="color" style="background-color: #FFCCFF;" data-color="#FFCCFF"></div>
+                                    <div class="color" style="background-color: #CCFFFF;" data-color="#CCFFFF"></div>
+                                    <div class="color" style="background-color: #EEEEEE;" data-color="#EEEEEE"></div>
+                                    <div class="color" style="background-color: #999999;" data-color="#999999"></div>
+                                </div>
+                            </div>
+                            <div class="color-picker color-palette-secondary">
+                                <p>Colores monocromáticos</p>
+                                <div class="color-palette">
+                                    <!-- Paleta monocromática en tonos de gris -->
+                                    <div class="color" style="background-color: #333333;" data-color="#333333"></div>
+                                    <div class="color" style="background-color: #666666;" data-color="#666666"></div>
+                                    <div class="color" style="background-color: #999999;" data-color="#999999"></div>
+                                    <div class="color" style="background-color: #BBBBBB;" data-color="#BBBBBB"></div>
+                                    <div class="color" style="background-color: #CCCCCC;" data-color="#CCCCCC"></div>
+                                    <div class="color" style="background-color: #DDDDDD;" data-color="#DDDDDD"></div>
+                                    <div class="color" style="background-color: #EEEEEE;" data-color="#EEEEEE"></div>
+                                    <div class="color" style="background-color: #FFFFFF;" data-color="#FFFFFF"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="parte-inferior">
+                <section class="col manual">
+                    <div class="manual-container">
+                        <div class="manual-cont">
+                            <div class="manual-msj">
+                                <h4 class="manual-msj-size"><strong>Ver Manual de Usuario</strong></h4>
+                            </div>
+                            <div class="manual-icon">
+                                <div class="circle-icon">
+                                    <a href="tu_enlace_aqui" class="enlace-documento">
+                                        <i class="far fa-file-alt icono-documento"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col message mt-2">
+                    <div class="message-container">
+                        <div class="message-cont">  
+                            <div class="mensaje">   
+                                <p>Gestione su espacio de trabajo de manera eficiente. ¿Quieres recibir asesoría? Comunícate con nuestro equipo. </p> 
+                            </div>  
+                            <div class="message-icon">  
+                                <div class="circle-icon"> 
+                                    <a href="tu_enlace_aqui" class="enlace-whatsapp">   
+                                        <i class="fab fa-whatsapp icono-whatsapp"></i>  
+                                    </a>    
+                                </div>    
+                            </div>  
+                        </div>   
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!--  <div class="c2">
+        <div id="content" class="opciones-menu">
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    Herramientas 
+                    <div class="col-lg-2 ">
+                        <button type="button" class="btn btn-primary btn-lg btn-save">
+                        <div>
+                            <i class="fa-solid fa-desktop imgnewelement"></i> </div>
+                        <div>Guardar</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+            
+            <!-- <div class="divisor">
+            </div>-->
+
+        <!--   <section>
+            <div class="tablero">
+            <table class="table">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Título</th>
+                    <th scope="col">Estadística </th>
+                    <th scope="col">Herramientas</th>
+                </tr>
+                </thead>
+                
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Clientes satisfechos con nuestro servicio digital</td>
+                    <th>337</th>
+                    <td>
+                    <div class="herramientas">
+                        <button type="button" class="btn btn-primary btnh-eliminar"><i class="fa-solid fa-trash-can hrr" width="10px"></i></button>
+                        <button type="button" class="btn btn-primary btnh"><i class="fa-solid fa-pen-to-square hrr" width="10px"></i></button>
+                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Nuevos
+                    Clientes este año</td>
+                    <th>40</th>
+                    <td>
+                    <div class="herramientas">
+                        <button type="button" class="btn btn-primary btnh-eliminar"><i class="fa-solid fa-trash-can hrr" width="10px"></i></button>
+                        <button type="button" class="btn btn-primary btnh"><i class="fa-solid fa-pen-to-square hrr" width="10px"></i></button>
+                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>De incremento de facturación anual</td>
+                    <th>27%</th>
+                    <td>
+                    <div class="herramientas">
+                        <button type="button" class="btn btn-primary btnh-eliminar"><i class="fa-solid fa-trash-can hrr" width="10px"></i></button>
+                        <button type="button" class="btn btn-primary btnh"><i class="fa-solid fa-pen-to-square hrr" width="10px"></i></button>
+                    </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            
+            
+            </div>
+
+        </section>-->
+    
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        //FUNCION PARA EL BOTON DESPEGABLE DE LA TABLA ESTADISTICA
+          document.querySelectorAll('.dropdown-item').forEach(item => {
+        item.addEventListener('click', function () {
+            const dropdownId = this.closest('.dropdown').querySelector('.dropdown-toggle').id;
+            document.getElementById(dropdownId).innerText = this.innerText;
+        });
+    });
+    //FUNCION PARA EL BOTON DESPEGABLE DE LA TABLA AGREGAR MIEMBROS
+    document.querySelectorAll('#tipoMiembroButton + .dropdown-menu .dropdown-item').forEach(item => {
+        item.addEventListener('click', function () {
+            document.getElementById('tipoMiembroButton').innerText = this.innerText;
+        });
+    });
+    
+    $(document).ready(function(){
+        $('#agregarMiembroButton').on('click', function(){
+            $('#ventana1').modal({
+                backdrop: 'static', // Evita cerrar haciendo clic fuera del modal
+                keyboard: false // Evita cerrar con la tecla ESC
+            });
+        });
+
+        $('.botones2').on('click', function(){
+            $('#ventana1').modal('hide');
+        });
+    });
+
+        //FUNCION PARA SUBIR ARCHIVO
+    document.getElementById("subir-archivo").addEventListener("click", function() {
+        document.getElementById("archivo-input").click();
+    });
+        //Mostrat codigo hexadecimal
+        document.addEventListener('DOMContentLoaded', function() {
+    const colorsPrimary = document.querySelectorAll('.color-palette-primary .color');
+    const colorsSecondary = document.querySelectorAll('.color-palette-secondary .color');
+    const inputPrimary = document.getElementById('color-code-primary');
+    const inputSecondary = document.getElementById('color-code-secondary');
+
+    // Asignar evento de clic para los colores primarios
+    colorsPrimary.forEach(color => {
+        color.addEventListener('click', function() {
+            const selectedColor = this.getAttribute('data-color');
+            inputPrimary.value = selectedColor;
+        });
+    });
+
+    // Asignar evento de clic para los colores secundarios
+    colorsSecondary.forEach(color => {
+        color.addEventListener('click', function() {
+            const selectedColor = this.getAttribute('data-color');
+            inputSecondary.value = selectedColor;
+        });
+    });
+
+    // Permitir escribir en los inputs
+    inputPrimary.addEventListener('input', function() {
+        const inputValue = this.value.trim();
+        if (isValidHexColor(inputValue)) {
+            this.value = inputValue.toUpperCase();
+        }
+    });
+
+    inputSecondary.addEventListener('input', function() {
+        const inputValue = this.value.trim();
+        if (isValidHexColor(inputValue)) {
+            this.value = inputValue.toUpperCase();
+        }
+    });
+});
+
+// Función para validar el formato del color hexadecimal
+function isValidHexColor(color) {
+    return /^#[0-9A-F]{6}$/i.test(color);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const btnGuardarPrimary = document.querySelector('.color-palette-primary .botones1');
+    const btnGuardarSecondary = document.querySelector('.color-palette-secondary .botones1');
+    const btnLimpiarPrimary = document.querySelector('.color-palette-primary .botones2');
+    const btnLimpiarSecondary = document.querySelector('.color-palette-secondary .botones2');
+    const inputPrimary = document.getElementById('color-code-primary');
+    const inputSecondary = document.getElementById('color-code-secondary');
+
+    // Función para guardar la información de los inputs de la paleta primaria
+    btnGuardarPrimary.addEventListener('click', function() {
+        const colorPrimary = inputPrimary.value.trim();
+        
+        // Aquí puedes realizar acciones con el color guardado, como enviarlo a un servidor o guardarlo localmente
+        console.log("Color principal (paleta primaria): " + colorPrimary);
+    });
+
+    // Función para guardar la información de los inputs de la paleta secundaria
+    btnGuardarSecondary.addEventListener('click', function() {
+        const colorSecondary = inputSecondary.value.trim();
+        
+        // Aquí puedes realizar acciones con el color guardado, como enviarlo a un servidor o guardarlo localmente
+        console.log("Color secundario (paleta secundaria): " + colorSecondary);
+    });
+
+    // Función para limpiar los inputs de la paleta primaria
+    btnLimpiarPrimary.addEventListener('click', function() {
+        inputPrimary.value = '';
+    });
+
+    // Función para limpiar los inputs de la paleta secundaria
+    btnLimpiarSecondary.addEventListener('click', function() {
+        inputSecondary.value = '';
+    });
+});
+
+
+    </script>
+    </body>
+</html>
+

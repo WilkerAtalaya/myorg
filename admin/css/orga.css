@@ -1,0 +1,487 @@
+:root{
+    --primary: #131313;
+    --light: #ffffff;
+    --grey: #efefef;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    font-family: 'Mulish',sans-serif;
+    font-weight: 300;
+    color: var(--primary);
+}
+/********************************************HEADER*************************************************/
+.header{
+    background-color:  #1E6B93;
+    height: 60px;
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.cajanav{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+.navadd{
+    height: 100%;
+    width: 100%;
+}
+.ccont{
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    margin: 0 auto;
+    background-color: #cfdeec;
+    border: 1px #030303;
+    width: 100%;
+}
+
+.navbar{
+    padding: 10px !important;
+}
+
+.logonegro{
+    position: absolute;
+    height: 80px;
+}
+
+.c1{
+    justify-items: auto;
+    width: 100%;
+    height:auto;
+    background-color: #273baf;
+    padding: 0;
+    position: inherit;
+}
+
+.submenu{
+    padding: 0 auto;
+    width: 100%;
+    height: 60px; 
+    font-size: bold;
+    background-color: #363636;
+}
+
+.navsub{
+    font-size: 20px;
+    letter-spacing: .1rem;
+}
+.navsub .nav-link{
+    color: #ffffff;
+}
+.navsub .nav-link:hover{
+    color: #a8a6a6;
+}
+
+.navsub .active1{
+    color: #1E6B93 !important;
+}
+
+.nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-menu {
+    list-style: none; 
+    padding: 0; 
+    display: flex;
+}
+
+.nav-menu-item {
+    margin-right: 15px; 
+}
+
+.nav-menu-link {
+    text-decoration: none; 
+    color: black; 
+}
+.nav-menu-link:hover {
+    color: white;
+}
+.nav-list{
+    margin-left: 200px;
+     cursor: pointer;
+}
+.nav-list a{
+     color: black; 
+}
+.cabecera{
+    display: block;
+}
+
+.select-menu{
+    background-color:  #1E6B93;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.bg-primary{
+    background-color: var(--primary) !important;
+}
+
+.sub-menu{
+    padding: 1rem 1.5rem;
+    height: 75px;
+    background-color: #8b8b8b;
+}
+
+#content{
+    overflow-y: auto;
+    height:100vh;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+}
+
+.titulocentral{
+    justify-items:auto;
+    padding-left: 2%;
+    color: #ffffff;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.logo-div1{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.logo-div2{
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: #1E6B93;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logonegro{
+    width: 30px;
+    height: 30px;
+}
+.caja1{
+    width: 100%;
+    height: 180px;
+    border: 4px solid rgb(7, 7, 7);
+}
+
+.cajanav{
+    background-color: #1E6B93;
+}
+
+.caja1-1{
+    height: 175px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid red;
+    width: 100%;
+}
+.caja2{
+    width: 100%;
+    height: 500px;
+    border: 4px solid rgb(7, 7, 7);
+}
+
+/********************************************BODY***************************************************/
+.first-body{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+    margin: 1% 0;
+}
+/******************************************SUBIR MANUAL DE USUARIO*******************************/
+.manual-container{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    background-color: #E2E2E2;
+    width: 60%;
+    padding: 5%;
+  }
+
+  .titulo {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .archivo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .boton-subir {
+    margin-bottom: 10px;
+    padding: 10px 80px; /* Ancho fijo del botón */
+    height: 50%;
+    background-color: #1E6B93;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .boton-subir:hover {
+    background-color: darkblue;
+  }
+
+  #archivo-seleccionado {
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+  }
+  /******************************************WHATSAPP*****************************************************/
+.whatsapp-container{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    background-color: #E2E2E2;
+    width: 80%;
+    padding: 2%;
+  }
+
+  .titulo2 {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .whatsapp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .input-whatsapp {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 90%;
+    box-sizing: border-box;
+    height: 80%;
+  }
+
+  .input-whatsapp:focus {
+    outline: none;
+    border-color: blue;
+  }
+  /************************************************TABLA*********************************************/
+  .table-org{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+    .table-container{
+        width: 80%;
+    }
+    .table, .thead-dark{
+        width: 100%;
+    }
+  .table-title{
+    width: 100%;
+    background-color: #1E6B93;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .table td, .table th {
+    text-align: center;
+    font-size: 13px; 
+  }
+  .table-title H5{
+    margin-left: 1%;
+    font-size: 15px;
+  }
+  .add-button {
+    background-color: transparent;
+    border: 1px white;
+    color: #FFFFFF;
+  }
+  .table tbody {
+    background-color: #E2E2E2;
+  }
+  .edit-button,
+  .delete-button {
+    font-size: 12px; /* Tamaño de letra para los botones de edición */
+    padding: 5px 10px; /* Ajuste del espacio interior de los botones */
+  }
+
+  /******************************************MODAL************************************************/
+  .custom-modal{
+    width: 200%;
+  }
+  .modal-content{
+    width: 100%;
+  }
+  .modal-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-header {
+    background-color: #1E6B93;
+    color: white;
+  }
+  .modal-body label{
+    font-weight: bold;
+  }
+  .close{
+    color: #FFFFFF;
+  }
+  .modal-title{
+    font-size: 18px;
+  }
+
+  .btn-secondary{
+    background-color: #1E6B93;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .header {
+        height: 65px;
+        width: auto;
+    }
+
+    .header .logo img {
+        height: 50px;
+        width: auto;
+        padding: 0 20px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        position: fixed;
+        background-color: #656464;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100% - 230px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .cajanav{
+        width: 100%;
+    }
+    .navbar-collapse {
+        background-color: #1E6B93; /* Cambia este color según tus preferencias */
+        text-align: center; /* Centra el contenido horizontalmente */
+    }
+    .nav-list{
+        margin: 0;
+        cursor: pointer;
+    }
+    .navadd{
+        width: 100%;
+    }
+    .nav-menu-item {
+        line-height: 50px;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu_visible {
+        left: 0;
+    }
+
+    .logo-div1{
+        width: 50px;
+        height: 50px;
+    }
+    .logo-div2{
+        width: 30px;
+        height: 30px;
+    }
+    .titulocentral h5{
+        font-size: 13px;
+    }
+    /****************************************Manual de usuario************************/
+    .titulo{
+        font-size: 10px;
+        padding-left: 5%;
+    }
+    .boton-subir{
+        width:5px;
+        height: 25px;
+        padding: 5px 40px;
+        font-size: 10px;
+    }
+    #archivo-seleccionado {
+       
+        font-size: 5px;
+      }
+    /***************************************Whatsapp******************************/
+    .contenedor2{
+        padding-top: 8%;
+    }
+    .titulo2{
+        font-size: 10px;
+        padding-left: 3%;
+    }
+    .input-whatsapp{
+        width: 90%;
+        height: 60%;
+    }
+    .input-whatsapp::placeholder {
+        font-size: 14px; /* Tamaño de letra deseado */
+    }
+  }
