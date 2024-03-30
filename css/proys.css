@@ -21,12 +21,11 @@
 
 @media (max-width: 768px ){
     .cab-info-proyectos{
-        margin-top: 80px !important;
+        margin-top: 30px !important;
         width: 85%;
         justify-content: space-between;
         justify-items: center;
         margin:  0 auto;
-        margin-top: -50px;
         margin-bottom: 10px;
         display: grid;
         place-items: center;
@@ -39,11 +38,13 @@
 
     .tittle-proyectos h1{
         font-weight: 600;
+        font-size: 20px;
     }
     
     .info-proyectos {
         width: 100%;
         text-align: justify;
+        padding: 0 40px;
     }
     .info-proyectos p{
         width: 100%;

@@ -56,7 +56,27 @@ body {
     color: #080808;
     text-decoration: none;
 }
+/***********************************TITULO************************************/
+.cab-info-proyectos{
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2% 0 !important;
+    padding: 0 !important;
 
+}
+.tittle-proyectos h1{
+    color: #fdbe1e;
+    margin-top: 4% ;
+    margin-bottom: 11%;
+    font-size: 40px;
+}
+.info-proyectos p{
+    font-size: 15px !important;
+}
+/**************************************************************************************************/
 .tittlesrvc a {
     position: relative;
     display: block;

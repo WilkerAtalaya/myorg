@@ -121,10 +121,10 @@ a:hover{
     color: var(--primary);
 }
 .header{
-   /* display: grid;
+   display: grid;
     grid-template-columns:  18% auto;
     grid-template-rows: auto;
-    width: 100%;
+    /* width: 100%;
     height:auto;
     margin: 0 auto;
     background-color: #1E6B93;
@@ -140,9 +140,8 @@ a:hover{
 
 
 .cajanav{
-    /*grid-column: 1/3;
+    grid-column: 1/3;
     height: 6vh;
-    background-color:  #1E6B93;*/
     display: flex;
     justify-content: space-between;
     height: 100%;
@@ -415,6 +414,7 @@ a:hover{
     height: 100%;
     align-items: center;
     padding: 0.8%;
+    margin-top: 1%;
 }
 .title-logo{
     width: 50px;
@@ -445,6 +445,7 @@ a:hover{
     display: flex;
     padding-bottom: 0;
     height: 100%;
+    margin-bottom: 0.5%;
 }
 .left-side, .right-side{
     flex: 1;
@@ -580,49 +581,28 @@ a:hover{
     justify-content: space-between;
     width: 90%;
 }
-.manual{
-    width: 30% !important;
-    height: 100px;
-    margin-top: 8px;
-    padding: 0;  
-    background-color: #1E9329;
-    flex: 1;
-}
-.manual-container{
+.a{
+    width: 35%;
+    background-color: #E2E2E2 ; 
+    padding: 5px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    margin: 5px 0;
 }
-.manual .manual-container .manual-cont{
-    background-color: #E2E2E2;
+.a-container, .b-container{
     display: flex;
     align-items: center;
-    text-align: center;
-    justify-content: space-between;
-    width: 100%;
-    height: auto;
-    flex-direction: column; 
-}
-
-.manual .manual-container .manual-cont .manual-msj{
-    width: 100%;
-    padding: 10px;
-    /*margin-top: 10px;**/
-    
-}
-.manual-msj h4{
-    font-size: 15px;
-}
-.manual .manual-container .manual-cont .manual-icon{
-    width: 100%;
-    padding:0;
-    display: flex;
-    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #E2E2E2 ; 
     text-align: center;
 }
 
-.manual .manual-container .manual-cont .circle-icon{
+.a-container h5{
+    font-size: 12px;
+}
+.a-container .circle-icon{
     background-color: #1E6B93;
     border-radius: 100px;
     width: 40px;
@@ -632,54 +612,24 @@ a:hover{
     justify-content: center;
     cursor: pointer;
 }
-.manual-msj-size{
-    font-size: 20px;
-}
-.icono-documento {
+.enlace-documento, .enlace-whatsapp{
     color: white;
-    font-size: 20px;
 }
-/*--------------------------------------------------message------------------------------------------------------------*/
-.message{
-    width: 70% !important;
-        height: 100px;
-    padding: 0;
-    background-color: red;
-    flex: 1;
-}
-.message-container{
+.b{
+    width: 63%;
+    background-color: #E2E2E2 ; 
+    padding: 5px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    margin: 5px 0;
 }
-.message .message-container .message-cont{
-    background-color: #E2E2E2;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-}
-
-.message .message-container .message-cont .mensaje{
-    width: 100%;
-    padding: 10px;
-    /*margin-top: 10px;*/
-    font-size: 12px;
-}
-.message .message-container .message-cont .message-icon{
-    width: 100%;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    text-align: center;
+.b-container p{
+    font-size: 10px;
+    padding: 0 5px;
     margin: 0;
 }
-
-.message .message-container .message-cont .circle-icon{
+.b-container .circle-icon{
     background-color: #1a7828;
     border-radius: 100px;
     width: 40px;
@@ -689,13 +639,29 @@ a:hover{
     justify-content: center;
     cursor: pointer;
 }
-
-.icono-whatsapp {
+@media (max-width: 768px) {
+    .parte-inferior{
+        width: 100%;
+        flex-direction: column;
+    }
+    .a, .b{
+        width: 100%;
+        padding: 0;
+        margin: 5px 0;
+    }
+    .a-container, .b-container{
+        width: 100%;
+    }
+    .a-container h5{
+        font-size: 16px;
+    }
+    .b-container p{
+        font-size: 13px;
+        padding: 0 1px;
+    }
+    .a-container .circle-icon{
     color: white;
-    font-size: 20px;
-}
-.mensaje p{
-    font-size: 8px;
+    }
 }
 /*--------------------------------------------------estadisticas------------------------------------------------------------*/
 .estadisticas{
@@ -1119,6 +1085,7 @@ a:hover{
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    position: relative;
 }
 .redes-title{
     background-color: #1E6B93; 
@@ -1191,7 +1158,7 @@ input[type="text"] {
 .subdominios {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 100%;
 }
 .subdominio-btn{
     display: flex;
@@ -1226,7 +1193,27 @@ input[type="text"] {
 .subdominios .red-social input{
     border-radius: 100px;
 }
-
+.subdominios .red-social input[type="text"] {
+    padding-left: 190px; /* Ajusta el espacio a la izquierda para el texto fijo */
+    width: calc(100% - 140px); /* Ajusta el ancho del input */
+}
+.subdominios .red-social{
+    flex-direction: column;
+    width: 100%;
+}
+.fixed-text {
+    position: absolute;
+    left: 80px; 
+    top: 50%;
+    transform: translateY(-90%);
+    color: #000000; /* Color del texto fijo */
+}
+.subdominios .red-social p{
+    margin: 0;
+    font-style: italic;
+    font-size: 13px;
+    margin-right: 50%;
+}
 /********************************************PALETA DE COLORES***********************/
 .colores{
     flex: 1;
@@ -1237,7 +1224,7 @@ input[type="text"] {
     height: auto;
     width: 90%;
     padding: 0;
-    margin: 1% 0;
+    margin: 0;
 }
 .colores-title{
     background-color: #1E6B93; 
@@ -1337,6 +1324,14 @@ input[type="text"] {
 .parrafo{
     margin-top: 10px;
 }
+
+.footer-2{
+    background-color: #191818;
+    margin: auto;
+    text-align: center;
+    color: #EDEDED;
+}
+
 /* Media query para dispositivos móviles */
 @media only screen and (max-width: 800px) {
     
@@ -1405,6 +1400,9 @@ input[type="text"] {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .title-body{
+        margin-top: 2%;
     }
     /****************************************HEADER******************************************/
     .header {
@@ -1484,5 +1482,45 @@ input[type="text"] {
     .color {
         width: 15px;
         height: 15px;
+    }
+    /********************************RED SOCIAL**************************************************/
+    .red-social input[type="text"]::placeholder {
+        font-size: 15px; 
+    }
+    .redes{
+        width: 80%;
+    }
+    /**********************************PALETA  DE COLORES*********************************************/
+    .paleta-container{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .paleta-color, .paleta-text{
+        width: 100%;
+    }
+    .input-color{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .inputcolor{
+        width: 80%;
+    }
+    .input-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .input-button button{
+        margin: 0 5px;
+    }
+    .subdominios .red-social p{
+        margin-right: 30%;
     }
 }

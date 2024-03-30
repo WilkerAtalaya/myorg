@@ -21,61 +21,61 @@
 <body>
     
     <header class="header">
-        <!-- NAVBAR ADMIN-->
-        <div class="caja cajanav">
-    
-            <!-- Topbar -->
-            <nav class="navbar navbar-expand-lg navbar-light topbar static-top shadow navadd">
-                <!-- Logo Navbar-->
-                <div class="logo-div1">
-                    <div class="logo-div2">
-                        <img class="logonegro" src="../../img/logoblack.png" alt="">
-                    </div>
+    <!-- NAVBAR ADMIN-->
+    <div class="caja cajanav">
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand-lg navbar-light topbar static-top shadow navadd">
+            <!-- Logo Navbar-->
+            <div class="logo-div1">
+                <div class="logo-div2">
+                    <img class="logonegro" src="../../img/logoblack.png" alt="">
                 </div>
-    
-                <div class="titulocentral">
-                    <h5><b>Plataforma Mi Organización Digital</b></h5>
-                </div>
-                
-                <!-- Botón de navegación para dispositivos pequeños -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <!-- Contenido del menú -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <div class="nav-list">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="../../index2.html"><i class="fas fa-home"></i> Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./html/contacto.html"><i class="fas fa-pencil-ruler"></i> Edición Web</a>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Topbar Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Nav Item - User Information -->
-                        <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fa-solid fa-circle-user"></i>
-                                <span class="mr-2 d-none d-lg-inline text-black">Antonio Fernandez</span>
-                            </a>
-                            <!-- Dropdown - User Information -->
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-1 text-gray-400"></i>
-                                    Cerrar Sesión
-                                </a>
-                            </div>
+            </div>
+
+            <div class="titulocentral">
+                <h5><b>Plataforma Mi Organización Digital</b></h5>
+            </div>
+            
+            <!-- Botón de navegación para dispositivos pequeños -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Contenido del menú -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="nav-list">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html"><i class="fas fa-home"></i> Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./organizaciones.html"><i class="fas fa-pencil-ruler"></i> Edición Web</a>
                         </li>
                     </ul>
                 </div>
-            </nav>
-        </div>
-    </header>
+                
+                <!-- Topbar Navbar -->
+                <ul class="navbar-nav ml-auto">
+                    <!-- Nav Item - User Information -->
+                    <li class="nav-item dropdown no-arrow">
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa-solid fa-circle-user"></i>
+                            <span class="mr-2 d-none d-lg-inline text-black">Antonio Fernandez</span>
+                        </a>
+                        <!-- Dropdown - User Information -->
+                        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                            <a class="dropdown-item" href="../../index.html" data-toggle="modal" data-target="#logoutModal">
+                                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-1 text-gray-400"></i>
+                                Cerrar Sesión
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
 
     <div class="title-body">
         <div class="title-logo">
@@ -379,7 +379,9 @@
                             </div>
                             <div class="subdominios">
                                 <div class="red-social">
-                                    <input type="text" placeholder="https://miorgdigital.com/">
+                                    <span class="fixed-text">https://miorgdigital.com/</span>
+                                    <input type="text" placeholder="tuorganizacion">
+                                    <p>Subdominio verificado</p>
                                 </div>
                                 <div class="redes-btn">
                                     <div class="plan-btn">
@@ -455,17 +457,17 @@
                         <div class="paleta-text">
                             <div class="input-color">
                                 <p>Elige el color principal:</p>
-                                <input type="text" id="color-code-primary" placeholder="Código Hexadecimal" >
+                                <input type="text" class="inputcolor" id="color-code-primary" placeholder="Código Hexadecimal" >
                                 <p class="texto-cursiva">Escribe el Código RGB</p>
                             </div>
                             <div class="input-color">
                                 <p>Elige el color secundario:</p>
-                                <input type="text" id="color-code-secondary" placeholder="Código Hexadecimal" >
+                                <input type="text" class="inputcolor" id="color-code-secondary" placeholder="Código Hexadecimal" >
                                 <p class="texto-cursiva">Escribe el Código RGB</p>
                             </div>
                             <div class="input-button">
-                                <button type="button" class="btn btn-primary botones1">Guardar</button>
-                                <button type="button" class="btn btn-secondary botones2">Limpiar</button>
+                                <button type="button" class="btn btn-primary botones1" id="botonGuardar">Guardar</button>
+                                <button type="button" class="btn btn-secondary botones2" onclick="limpiarInputs()">Limpiar</button>
                             </div>
                         </div>
                         <div class="paleta-color">
@@ -531,7 +533,27 @@
                 </div>
             </div>
             <div class="parte-inferior">
-                <section class="col manual">
+                <div class="a">
+                    <div class="a-container">
+                        <h5>Ver Manual de Usuario</h5>
+                        <div class="circle-icon">
+                            <a href="tu_enlace_aqui" class="enlace-documento">
+                                <i class="far fa-file-alt icono-documento"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="b">
+                    <div class="b-container">
+                        <p>Gestione su espacio de trabajo de manera eficiente. ¿Quieres recibir asesoría? Comunícate con nuestro equipo. </p> 
+                        <div class="circle-icon"> 
+                            <a href="tu_enlace_aqui" class="enlace-whatsapp">   
+                                <i class="fab fa-whatsapp icono-whatsapp"></i>  
+                            </a>    
+                        </div> 
+                    </div>
+                </div>
+              <!--  <section class="col manual">
                     <div class="manual-container">
                         <div class="manual-cont">
                             <div class="manual-msj">
@@ -547,7 +569,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="col message mt-2">
+                <section class="col message">
                     <div class="message-container">
                         <div class="message-cont">  
                             <div class="mensaje">   
@@ -562,7 +584,7 @@
                             </div>  
                         </div>   
                     </div>
-                </section>
+                </section>-->
             </div>
         </div>
     </div>
@@ -641,7 +663,11 @@
             </div>
 
         </section>-->
-    
+        <footer>
+            <div class="footer-2">
+                <small> 2024 - &copy;<b>Yo Inti</b> - Todos los Derechos Reservados.</small>
+            </div>
+        </footer>
 
 
 
@@ -727,41 +753,34 @@ function isValidHexColor(color) {
     return /^#[0-9A-F]{6}$/i.test(color);
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    const btnGuardarPrimary = document.querySelector('.color-palette-primary .botones1');
-    const btnGuardarSecondary = document.querySelector('.color-palette-secondary .botones1');
-    const btnLimpiarPrimary = document.querySelector('.color-palette-primary .botones2');
-    const btnLimpiarSecondary = document.querySelector('.color-palette-secondary .botones2');
-    const inputPrimary = document.getElementById('color-code-primary');
-    const inputSecondary = document.getElementById('color-code-secondary');
+//GUARDAR DATOS DE LOS INPUTS
+document.addEventListener("DOMContentLoaded", function() {
+    // Selecciona el botón "Guardar"
+    var botonGuardar = document.getElementById("botonGuardar");
 
-    // Función para guardar la información de los inputs de la paleta primaria
-    btnGuardarPrimary.addEventListener('click', function() {
-        const colorPrimary = inputPrimary.value.trim();
-        
-        // Aquí puedes realizar acciones con el color guardado, como enviarlo a un servidor o guardarlo localmente
-        console.log("Color principal (paleta primaria): " + colorPrimary);
-    });
+    // Agrega un evento click al botón "Guardar"
+    botonGuardar.addEventListener("click", function() {
+        // Obtiene los valores de los inputs
+        var colorPrincipal = document.getElementById("color-code-primary").value;
+        var colorSecundario = document.getElementById("color-code-secondary").value;
 
-    // Función para guardar la información de los inputs de la paleta secundaria
-    btnGuardarSecondary.addEventListener('click', function() {
-        const colorSecondary = inputSecondary.value.trim();
-        
-        // Aquí puedes realizar acciones con el color guardado, como enviarlo a un servidor o guardarlo localmente
-        console.log("Color secundario (paleta secundaria): " + colorSecondary);
-    });
-
-    // Función para limpiar los inputs de la paleta primaria
-    btnLimpiarPrimary.addEventListener('click', function() {
-        inputPrimary.value = '';
-    });
-
-    // Función para limpiar los inputs de la paleta secundaria
-    btnLimpiarSecondary.addEventListener('click', function() {
-        inputSecondary.value = '';
+        // Aquí puedes hacer algo con los valores, como guardarlos en una variable, enviarlos a través de una petición AJAX, etc.
+        console.log("Color principal:", colorPrincipal);
+        console.log("Color secundario:", colorSecundario);
+        // Por ejemplo, si deseas enviarlos a través de una petición AJAX, puedes hacerlo así:
+        // enviarDatos(colorPrincipal, colorSecundario);
     });
 });
+//LIMPIAR LOS INPUTS
+function limpiarInputs() {
+    // Selecciona los dos inputs por su ID
+    var inputColorPrincipal = document.getElementById("color-code-primary");
+    var inputColorSecundario = document.getElementById("color-code-secondary");
 
+    // Limpia el contenido de los dos inputs
+    inputColorPrincipal.value = "";
+    inputColorSecundario.value = "";
+}
 
     </script>
     </body>

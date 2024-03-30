@@ -27,7 +27,7 @@ html{
 }
 
 
-/************************** *************************/
+/************************** ***********************
 .content-nos{
     position: relative;
     background-color: #EDEDED;
@@ -39,40 +39,54 @@ html{
     background-color: #EDEDED;
     width: 100%;
     height: 100px;
-}
+}**/
 
 /** scroll nosotros **/
 
-.s-nosotros{
+/*.s-nosotros{
     display: flex;
-    background-image: url(../img/imgcab/cabproy.jpg);
+   /* background-image: url(../img/imgcab/cabproy.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
-    justify-content: center;
+    background-size: cover;*/
+   /* justify-content: center;
     justify-items: center;
-    height: 200px; 
-    padding: 0;
-}
+    width: 100%; 
+    padding: 0  !important;
+    margin: 0  !important;
+}*/
 
-.tittle{
-    color: azure;
+/*.tittle{
+    color: #fdbe1e;
     text-align: center;
-    padding-top: .8em;
-    font-size: 70px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    padding-top: .9em !important;
+    font-size: 45px;
+    font-weight: 0 !important;
+    margin-bottom: 0;
 }
 
 .about{
-    margin-top: 0px;
+    margin-top: 0;
     padding: 0;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
+.about-container{
+    padding: 0;
+    margin: 0;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.content{
+    padding: 0 10%;
+    margin: 0;
+}
 .about-container .content p{
     font-family: 'Poppins' !important;
-    font-size: 18px !important;
+    font-size: 15px !important;
     text-align: justify !important;
+    
 }
 
 @media (max-width:768px){
@@ -93,7 +107,62 @@ html{
         font-size: 14px !important;
     }
 }
+/***********************************TITULO************************************/
+.cab-info-proyectos{
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2% 0;
+    padding: 0 !important;
 
+}
+
+.tittle-proyectos h1{
+    color: #fdbe1e;
+    margin-top: 4% ;
+    margin-bottom: 11%;
+    font-size: 40px;
+}
+.info-proyectos p{
+    font-size: 15px !important;
+    padding: 0 20%;
+    text-align: justify;
+}
+@media (max-width: 768px ){
+    .cab-info-proyectos{
+        margin-top: 30px !important;
+        width: 85%;
+        justify-content: space-between;
+        justify-items: center;
+        margin:  0 auto;
+        margin-bottom: 10px;
+        display: grid;
+        place-items: center;
+    }
+    
+    .tittle-proyectos{
+        display: grid;
+        place-items: center;
+    }
+
+    .tittle-proyectos h1{
+        font-weight: 600;
+        font-size: 20px;
+    }
+    
+    .info-proyectos {
+        width: 100%;
+        text-align: justify;
+    }
+    .info-proyectos p{
+        width: 100%;
+        text-align: justify;
+        font-size: 15px !important;
+        padding: 0 30px;
+    }
+}
 /****************** CARACTERISTICAS *************************/
 .features{
     width: auto;
@@ -110,6 +179,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .features .container-cuadro .cuadro{
@@ -135,7 +205,7 @@ html{
 .features .container-cuadro .cuadro p{
     margin-top: .5rem;
     padding: 0 2rem 0 3rem;
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
     font-family:  sans-serif;
 }

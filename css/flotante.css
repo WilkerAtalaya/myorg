@@ -18,10 +18,10 @@
     font-size: 35px;
     cursor: pointer;
 }
-@keyframes vibrar {
+/*@keyframes vibrar {
     0%, 100% { transform: translateX(0); }
     50% { transform: translateX(-2px) translateY(-2px); }
-}
+}*/
 .flotante{
     width: auto;
     position: fixed;

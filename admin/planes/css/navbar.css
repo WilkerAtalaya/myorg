@@ -80,6 +80,47 @@ body {
 .navtoggle:focus:not(:focus-visible) {
     outline: none;
 }
+.btn1{
+    cursor: pointer;
+    font-size: 1.2rem;
+    color:rgb(29, 28, 28);
+    background-color: #FFB602;
+    border-radius: .5rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    display: inline-block;
+    text-decoration: none;
+    padding:.8rem 3rem;
+    border: solid 1px #FFB602;
+    font-weight: bold;
+ }
+
+.btn1:hover{
+    background: var(--green);
+    border: solid 1px #FFFFFF;
+    color:#FFFFFF;
+    font-weight: bold;
+}
+
+.btn{
+    cursor: pointer;
+    font-size: 1.7rem;
+    color:#fff;
+    background-color: #FFB602;
+    border-radius: .5rem;
+    margin-top: 2rem;
+
+    display: inline-block;
+    text-decoration: none;
+    padding:.8rem 3rem;
+ } 
+.btn:hover{
+    background: #030303;
+    color: #FFB602;
+    letter-spacing: .1rem;
+}
+
+
 
 /* Modificando el CSS para dispositivos Móviles */
 @media (max-width: 768px) {
