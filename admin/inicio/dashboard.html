@@ -711,25 +711,34 @@
     });
         //Mostrat codigo hexadecimal
         document.addEventListener('DOMContentLoaded', function() {
-    const colorsPrimary = document.querySelectorAll('.color-palette-primary .color');
-    const colorsSecondary = document.querySelectorAll('.color-palette-secondary .color');
+    const colors = document.querySelectorAll('.color');
     const inputPrimary = document.getElementById('color-code-primary');
     const inputSecondary = document.getElementById('color-code-secondary');
+    let lastSelectedInput = null; // Para almacenar el último input seleccionado
 
-    // Asignar evento de clic para los colores primarios
-    colorsPrimary.forEach(color => {
+    // Función para asignar el color al último input seleccionado
+    function assignColorToLastSelectedInput(color) {
+        if (lastSelectedInput === inputPrimary) {
+            inputPrimary.value = color;
+        } else if (lastSelectedInput === inputSecondary) {
+            inputSecondary.value = color;
+        }
+    }
+
+    colors.forEach(color => {
         color.addEventListener('click', function() {
             const selectedColor = this.getAttribute('data-color');
-            inputPrimary.value = selectedColor;
+            assignColorToLastSelectedInput(selectedColor);
         });
     });
 
-    // Asignar evento de clic para los colores secundarios
-    colorsSecondary.forEach(color => {
-        color.addEventListener('click', function() {
-            const selectedColor = this.getAttribute('data-color');
-            inputSecondary.value = selectedColor;
-        });
+    // Evento para actualizar el último input seleccionado
+    inputPrimary.addEventListener('focus', function() {
+        lastSelectedInput = inputPrimary;
+    });
+
+    inputSecondary.addEventListener('focus', function() {
+        lastSelectedInput = inputSecondary;
     });
 
     // Permitir escribir en los inputs
@@ -737,6 +746,7 @@
         const inputValue = this.value.trim();
         if (isValidHexColor(inputValue)) {
             this.value = inputValue.toUpperCase();
+            lastSelectedInput = inputPrimary; // Actualizar el último input seleccionado
         }
     });
 
@@ -744,9 +754,11 @@
         const inputValue = this.value.trim();
         if (isValidHexColor(inputValue)) {
             this.value = inputValue.toUpperCase();
+            lastSelectedInput = inputSecondary; // Actualizar el último input seleccionado
         }
     });
 });
+
 
 // Función para validar el formato del color hexadecimal
 function isValidHexColor(color) {
