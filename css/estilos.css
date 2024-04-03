@@ -388,7 +388,7 @@ body{
 }
 
 .cuadrado .container-cuadro .cuadro{
-    width: 23%;
+    width: 310px;
     height: 405px;
     border-radius: 8px;
     overflow: visible;
@@ -420,7 +420,13 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transition: opacity 0.3s, transform 0.3s; 
 }
+
+  .cuadrado .container-cuadro .cuadro:hover .up-cuadro {
+    height: 100%; /* Alargar el cuadro */
+    transform: translateY(-37.2%); /* Mover hacia abajo */
+  }
 .cuadrado .container-cuadro .cuadro .up-cuadro img{
     width: 100px;
     height: 100px;
@@ -447,7 +453,7 @@ body{
 }
 .cuadrado .container-cuadro .cuadro:hover{
     box-shadow: 
-    20px 20px  #2e2e2e, 30px 30px 14px #707070;
+    12px 12px  #2e2e2e, 30px 30px 14px #707070;
     transform: translate(-5px, -5px);
 }
 .cuadrado .container-cuadro .ol-box {
@@ -513,6 +519,7 @@ body{
     color: #000000;
     border: solid 2.2px #000000;
 }
+/******************************EFECTO CUADRO**************************************/
 
 @media (max-width:768px) {
     .cuadrado{

@@ -21,60 +21,59 @@
 <body>
     
     <header class="header">
-    <!-- NAVBAR ADMIN-->
-    <div class="caja cajanav">
-        <!-- Topbar -->
-        <nav class="navbar navbar-expand-lg navbar-light topbar static-top shadow navadd">
-            <!-- Logo Navbar-->
-            <div class="logo-div1">
-                <div class="logo-div2">
-                    <img class="logonegro" src="../../img/logoblack.png" alt="">
+        <!-- NAVBAR ADMIN-->
+        <div class="caja cajanav">
+            <!-- Topbar -->
+            <nav class="navbar navbar-expand-lg navbar-light topbar static-top shadow navadd">
+                <!-- Logo Navbar-->
+                <div class="logo-div1">
+                  <img class="logonegro" src="../img/LOGO2-MOD.png" alt="">
                 </div>
-            </div>
-
-            <div class="titulocentral">
-                <h5><b>Plataforma Mi Organización Digital</b></h5>
-            </div>
-            
-            <!-- Botón de navegación para dispositivos pequeños -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <!-- Contenido del menú -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="nav-list">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../../index.html"><i class="fas fa-home"></i> Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./organizaciones.html"><i class="fas fa-pencil-ruler"></i> Edición Web</a>
-                        </li>
-                    </ul>
-                </div>
+    
+                 <!--<div class="titulocentral">
+                    <h5><b>Plataforma Mi Organización Digital</b></h5>
+                </div>-->
                 
-                <!-- Topbar Navbar -->
-                <ul class="navbar-nav ml-auto">
-                    <!-- Nav Item - User Information -->
-                    <li class="nav-item dropdown no-arrow">
-                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa-solid fa-circle-user"></i>
-                            <span class="mr-2 d-none d-lg-inline text-black">Antonio Fernandez</span>
-                        </a>
-                        <!-- Dropdown - User Information -->
-                        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                            <a class="dropdown-item" href="../../index.html" data-toggle="modal" data-target="#logoutModal">
-                                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-1 text-gray-400"></i>
-                                Cerrar Sesión
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-</header>
+                <!-- Botón de navegación para dispositivos pequeños -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Contenido del menú -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="nav-list">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./dashboard.html"><i class="fas fa-home"></i> Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./organizaciones.html"><i class="fas fa-pencil-ruler"></i> Edición Web</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                      <!-- Nav Item - User Information -->
+                      <li class="nav-item dropdown no-arrow">
+                          <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fa-solid fa-circle-user"></i>
+                              <span class="mr-2 d-none d-lg-inline text-black">Antonio Fernandez</span>
+                          </a>
+                          <!-- Dropdown - User Information -->
+                          <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                              <a class="dropdown-item" href="../../login/html/login.html">
+                                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-1 text-gray-400"></i>
+                                  Cerrar Sesión
+                              </a>
+                          </div>
+                      </li>
+                  </ul>
+                  
+                </div>
+            </nav>
+        </div>
+    </header>
 
 
     <div class="title-body">
@@ -141,7 +140,7 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title fs-5" id="exampleModalLabel"><b>Editar miembro del Equipo</b></h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                 </div>
                                 <div class="modal-body">
                                     <form>
@@ -183,7 +182,7 @@
                           <div class="modal-content cambiaplan">
                             <div class="modal-header planheader">
                                 <h5 class="modal-title fs-5" id="exampleModalLabel"><b>Cambio de plan</b></h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                             </div>
                             <!-- División superior dividida en 3 columnas -->
                             <div class="modal-body planbody">
