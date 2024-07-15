@@ -33,7 +33,7 @@
     height: 6vh;
     display: flex;
     justify-content: space-between;
-    height: 100%;
+    height: 65px;
     width: 100%;
 }
 .navadd{
@@ -53,10 +53,6 @@
     padding: 10px !important;
 }
 
-.logonegro{
-    position: absolute;
-    height: 80px;
-}
 
 .c1{
     justify-items: auto;
@@ -111,15 +107,19 @@
     margin-right: 15px; 
 }
 
+.nav-list a,
 .nav-menu-link {
-    text-decoration: none; 
-    color: black; 
+    text-decoration: none;
+    color: black !important;
 }
+
+/* Cambia el color a blanco al pasar el mouse */
+.nav-list a:hover,
 .nav-menu-link:hover {
-    color: white;
+    color: white !important;
 }
 .nav-list{
-    margin-left: 200px;
+    padding-left: 25% ;
      cursor: pointer;
 }
 .nav-list a{
@@ -132,7 +132,15 @@
 .select-menu{
     background-color:  #1E6B93;
 }
+.navbar-nav .nav-item .nav-link,
+.navbar-nav .dropdown-menu .dropdown-item {
+    color: black !important;
+}
 
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    color: white !important;
+}
 a:hover{
     text-decoration: none;
 }
@@ -161,18 +169,19 @@ a:hover{
     margin-right: 10px;
     font-weight: bold;
 }
+.logonegro{
+    height: 30px;
+}
 
 .logo-div1{
-    width: 50px;
+    width: auto;
     height: 50px;
-    border-radius: 100px;
-    background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
-.logo-div2{
+/*.logo-div2{
     width: 30px;
     height: 30px;
     border-radius: 100px;
@@ -181,11 +190,8 @@ a:hover{
     align-items: center;
     justify-content: center;
 }
+*/
 
-.logonegro{
-    width: 30px;
-    height: 30px;
-}
 .caja1{
     width: 100%;
     height: 180px;
@@ -218,6 +224,13 @@ a:hover{
     width: 100%;
     height: 10%;
     margin: 1% 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-body{
+    display: flex;
+    width: 80%;
 }
 /******************************************SUBIR MANUAL DE USUARIO*******************************/
 .manual-container{
@@ -234,7 +247,7 @@ a:hover{
     justify-content: center;
     height: 80%;
     background-color: #E2E2E2;
-    width: 60%;
+    width: 70%;
     padding: 5%;
   }
 
@@ -292,7 +305,7 @@ a:hover{
     justify-content: center;
     height: 80%;
     background-color: #E2E2E2;
-    width: 80%;
+    width: 90%;
     padding: 2%;
   }
 
@@ -449,25 +462,29 @@ a:hover{
     }
 
     .logo-div1{
-        width: 50px;
-        height: 50px;
+        width: 80%;
     }
-    .logo-div2{
+    .logonegro{
+        height: 28px;
+        padding-left: 15%;
+    }
+   /* .logo-div2{
         width: 30px;
         height: 30px;
-    }
+    }*/
     .titulocentral h5{
         font-size: 13px;
     }
     /****************************************Manual de usuario************************/
     .titulo{
-        font-size: 10px;
+        font-size: 9.5px;
         padding-left: 5%;
+        text-align: center;
     }
     .boton-subir{
-        width:5px;
+        width: 5px;
         height: 25px;
-        padding: 5px 40px;
+        padding: 5px 30px;
         font-size: 10px;
     }
     #archivo-seleccionado {
@@ -479,14 +496,15 @@ a:hover{
         padding-top: 8%;
     }
     .titulo2{
-        font-size: 10px;
+        font-size: 9px;
         padding-left: 3%;
+        text-align: center;
     }
     .input-whatsapp{
         width: 90%;
         height: 60%;
     }
     .input-whatsapp::placeholder {
-        font-size: 14px; /* Tamaño de letra deseado */
+        font-size: 9.5px; /* Tamaño de letra deseado */
     }
   }

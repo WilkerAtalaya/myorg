@@ -12,7 +12,7 @@ navToggle.addEventListener("click", () => {
     }
 });
 
-/*-----------------------------SLIDER INICIAL---------------------------------------------------------------------*/
+/*-----------------------------SLIDER INICIAL---------------------------------------------------------------------
 var homeSwiper = new Swiper(".home-slider", {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -44,7 +44,7 @@ var homeSwiper = new Swiper(".home-slider", {
         prevEl: ".swiper-button-prev",
     },
 });
-
+*/
 /*-----------------------------SLIDER DE TESTIMONIOS-------------------------------------------------------------------------*/
 var reviewSwiper = new Swiper(".review-slider", {
     spaceBetween: 20,

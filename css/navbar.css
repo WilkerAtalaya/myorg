@@ -32,11 +32,12 @@ body {
 
 .header .logo {
     cursor: pointer;
-    margin-top: 7px;
+    margin-top: 1.5%;
+    margin-left: -3%;
 }
 
 .header .logo img {
-    height: 70px;
+    height: 50px;
     width: auto;
 }
 
@@ -88,9 +89,10 @@ body {
     }
 
     .header .logo img {
-        height: 50px;
+        height: 24px;
         width: auto;
         padding: 0 20px;
+        margin-top: 4%;
     }
 
     .nav-menu {

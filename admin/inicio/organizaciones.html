@@ -12,7 +12,6 @@
     <!-- Icons-fontawesome -->
     <script src="https://kit.fontawesome.com/7762120437.js" crossorigin="anonymous"></script>
 
-    <script defer src="index.js"></script>
 </head>
 <body>
   <header class="header">
@@ -22,14 +21,12 @@
         <nav class="navbar navbar-expand-lg navbar-light topbar static-top shadow navadd">
             <!-- Logo Navbar-->
             <div class="logo-div1">
-                <div class="logo-div2">
-                    <img class="logonegro" src="../../img/logoblack.png" alt="">
-                </div>
+              <img class="logonegro" src="../img/LOGO2-MOD.png" alt="">
             </div>
 
-            <div class="titulocentral">
+             <!--<div class="titulocentral">
                 <h5><b>Plataforma Mi Organización Digital</b></h5>
-            </div>
+            </div>-->
             
             <!-- Botón de navegación para dispositivos pequeños -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +38,7 @@
                 <div class="nav-list">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="../../index.html"><i class="fas fa-home"></i> Inicio</a>
+                            <a class="nav-link" href="./dashboard.html"><i class="fas fa-home"></i> Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./organizaciones.html"><i class="fas fa-pencil-ruler"></i> Edición Web</a>
@@ -51,27 +48,29 @@
                 
                 <!-- Topbar Navbar -->
                 <ul class="navbar-nav ml-auto">
-                    <!-- Nav Item - User Information -->
-                    <li class="nav-item dropdown no-arrow">
-                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa-solid fa-circle-user"></i>
-                            <span class="mr-2 d-none d-lg-inline text-black">Antonio Fernandez</span>
-                        </a>
-                        <!-- Dropdown - User Information -->
-                        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                            <a class="dropdown-item" href="../../index.html" data-toggle="modal" data-target="#logoutModal">
-                                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-1 text-gray-400"></i>
-                                Cerrar Sesión
-                            </a>
-                        </div>
-                    </li>
-                </ul>
+                  <!-- Nav Item - User Information -->
+                  <li class="nav-item dropdown no-arrow">
+                      <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fa-solid fa-circle-user"></i>
+                          <span class="mr-2 d-none d-lg-inline text-black">Antonio Fernandez</span>
+                      </a>
+                      <!-- Dropdown - User Information -->
+                      <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                          <a class="dropdown-item" href="../../login/html/login.html">
+                              <i class="fas fa-sign-out-alt fa-sm fa-fw mr-1 text-gray-400"></i>
+                              Cerrar Sesión
+                          </a>
+                      </div>
+                  </li>
+              </ul>
+              
             </div>
         </nav>
     </div>
   </header>
     
     <div class="first-body">
+      <div class="second-body">
         <div class="manual-container">
             <div class="contenedor">
                 <div class="titulo">Subir Manual de Usuario</div>
@@ -90,6 +89,7 @@
                 </div>
               </div>
         </div>
+      </div>
     </div>
     <div class="table-org">
         <div class="table-container">
@@ -265,54 +265,54 @@
                     <div class="col-md-6 left">
                       <div class="form-group">
                         <label for="organizacion">Organización</label>
-                        <input type="text" class="form-control" id="organizacion">
+                        <input type="text" class="form-control" id="organizacion2">
                       </div>
                       <div class="form-group">
                         <label for="representante">Representante</label>
-                        <input type="text" class="form-control" id="representante">
+                        <input type="text" class="form-control" id="representante2">
                       </div>
                       <div class="form-group">
                         <label for="subdominio">Subdominio</label>
-                        <input type="text" class="form-control" id="subdominio">
+                        <input type="text" class="form-control" id="subdominio2">
                       </div>
                       <div class="form-group">
                         <label for="telefono">Teléfono</label>
-                        <input type="tel" class="form-control" id="telefono">
+                        <input type="tel" class="form-control" id="telefono2">
                       </div>
                       <div class="form-group">
                         <label for="correo">Correo</label>
-                        <input type="email" class="form-control" id="correo">
+                        <input type="email" class="form-control" id="correo2">
                       </div>
                     </div>
                     <!-- Columna derecha -->
                     <div class="col-md-6 right">
                       <div class="form-group">
                         <label for="plan">Plan</label>
-                        <input type="text" class="form-control" id="plan">
+                        <input type="text" class="form-control" id="plan2">
                       </div>
                       <div class="form-group">
                         <label for="fecha_inicio">Fecha de inicio</label>
-                        <input type="date" class="form-control" id="fecha_inicio">
+                        <input type="date" class="form-control" id="fecha_inicio2">
                       </div>
                       <div class="form-group">
                         <label for="fecha_termino">Fecha de término</label>
-                        <input type="date" class="form-control" id="fecha_termino">
+                        <input type="date" class="form-control" id="fecha_termino2">
                       </div>
                       <div class="form-group">
                         <label for="miembros">N° de miembros</label>
-                        <input type="number" class="form-control" id="miembros">
+                        <input type="number" class="form-control" id="miembros2">
                       </div>
                       <div class="form-group">
                         <label for="usuario">Usuario</label>
-                        <input type="text" class="form-control" id="usuario">
+                        <input type="text" class="form-control" id="usuario2">
                       </div>
                       <div class="form-group">
                         <label for="contrasena">Contraseña</label>
-                        <input type="password" class="form-control" id="contrasena">
+                        <input type="password" class="form-control" id="contrasena2">
                       </div>
                     </div>
                   </div>
-              </form>
+              </form>c
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-primary" onclick="habilitarEdicion()">Editar</button>
@@ -346,11 +346,9 @@
     var fila = btn.closest('tr');
     // Obtener los datos de la fila
     var organizacion = fila.cells[1].innerText.trim();
-    // Otros campos de la fila...
     
     // Asignar los datos a los campos del formulario en el modal
     document.getElementById('organizacion').value = organizacion;
-    // Otros campos del formulario...
     
     // Abrir el modal
     $('#editarModal').modal('show');
@@ -360,14 +358,12 @@
   function habilitarEdicion() {
     // Habilitar la edición de los campos
     document.getElementById('organizacion').readOnly = false;
-    // Otros campos del formulario...
   }
 
   // Función para limpiar los campos del formulario
   function limpiarCampos() {
     // Limpiar los valores de los campos
     document.getElementById('organizacion').value = '';
-    // Otros campos del formulario...
   }
     </script>
 </body>
